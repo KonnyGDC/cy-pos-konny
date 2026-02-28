@@ -2,7 +2,7 @@ require("dotenv").config();
 const { defineConfig } = require("cypress");
 module.exports = defineConfig({
 e2e: {
-baseUrl: process.env.CYPRESS_BASE_URL || "http://localhost:3000",
+baseUrl: process.env.CYPRESS_BASE_URL || "https://hr.lstvqatest.online/",
 specPattern: "cypress/e2e/**/*.cy.js",
 reporter: "cypress-mochawesome-reporter",
 reporterOptions: {
