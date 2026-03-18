@@ -38,10 +38,23 @@ describe('Kunneeeh', () => {
       cy.wait(2000)
 
       cy.get('#pager_default_add').click()
-      cy.get('[name="modalField[citydesc]"]').click().type('ABC123')
+      cy.get('[name="modalField[citydesc]"]').click().type('ABC123456')
       cy.get('#btn_diag_save').click()
       cy.get('.ajs-button').click()
+      cy.wait(2000)
 
+       //Editing of City
+      cy.get('#\\35  > .pager_action_btn_container > #pager_default_edit') .click()
+      cy.get('[name="modalField[citydesc]"]').click().clear().type('Bacoor City')
+      cy.get('#btn_diag_save').click()
+      cy.get('.ajs-button').click()
+      cy.wait(2000)
+
+      //Deleting of City
+      cy.get('#\\32 17 > .pager_action_btn_container > #pager_default_delete').click()
+      cy.get('.ajs-content').should('be.visible')
+      cy.get('.ajs-primary > .print').click()
+      cy.get(':nth-child(16) > .ajs-modal > .ajs-dialog > .ajs-footer > .ajs-primary > .ajs-button').click()
       cy.wait(2000)
 
       cy.get('[width="38%"] > p').click()
