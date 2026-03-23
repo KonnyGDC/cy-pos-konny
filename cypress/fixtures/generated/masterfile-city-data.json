@@ -1,0 +1,19 @@
+{
+  "city-data": [
+    {
+      "testCaseId": "POS-CITY-010",
+      "description": "should add a Ilocos Sur city",
+      "name": "Ilocos Sur"
+    },
+    {
+      "testCaseId": "POS-CITY-011",
+      "description": "should add a Montalban city",
+      "name": "Montalban"
+    },
+    {
+      "testCaseId": "POS-CITY-012",
+      "description": "should add a ABC123456 city",
+      "name": "ABC123456"
+    }
+  ]
+}

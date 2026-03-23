@@ -1,0 +1,9 @@
+[
+  {
+    "testCaseId": "POS-CITY-053",
+    "description": "should not allow editing to a duplicate city  name",
+    "firstName": "Vigan",
+    "secondName": "Montalban",
+    "duplicateMessage": "City ({city}) already Exist"
+  }
+]

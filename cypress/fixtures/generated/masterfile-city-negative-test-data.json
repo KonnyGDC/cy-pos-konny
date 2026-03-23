@@ -1,0 +1,80 @@
+{
+  "pageLoad": [
+    {
+      "testCaseId": "POS-CITY-001",
+      "description": "should load the city master file page"
+    }
+  ],
+  "add": [
+    {
+      "testCaseId": "POS-CITY-010",
+      "description": "should add a Ilocos Sur city",
+      "name": "Ilocos Sur"
+    },
+    {
+      "testCaseId": "POS-CITY-011",
+      "description": "should add a Montalban city",
+      "name": "Montalban"
+    },
+    {
+      "testCaseId": "POS-CITY-012",
+      "description": "should add a ABC123456 city",
+      "name": "ABC123456"
+    }
+  ],
+  "edit": [
+    {
+      "testCaseId": "POS-CITY-019",
+      "description": "should edit a Bacoor city",
+      "originalName": "Bacoor",
+      "updatedName": "Bacoor City"
+    }
+  ],
+  "delete": [
+    {
+      "testCaseId": "POS-CITY-029",
+      "description": "should delete a ABC123 city ",
+      "name": "ABC123"
+    }
+  ],
+  "validation": [
+    {
+      "testCaseId": "POS-CITY-040",
+      "description": "should validate required name",
+      "requiredNameMessage": "Please fill required field(s)"
+    }
+  ],
+  "duplicate": [
+    {
+      "testCaseId": "POS-CITY-051",
+      "description": "should not allow duplicate city name",
+      "name": "Ilocos Sur",
+      "duplicateMessage": "City ({name}) already Exist"
+    }
+  ],
+  "spacesOnly": [
+    {
+      "testCaseId": "POS-CITY-051",
+      "description": "should not allow spaces-only city name",
+      "name": "   ",
+      "requiredNameMessage": "Please fill required field(s)"
+    }
+  ],
+  "maxLength": [
+    {
+      "testCaseId": "POS-CITY-052",
+      "description": "should not allow overly long city name",
+      "name": "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+      "maxLengthMessage": "25"
+    }
+  ],
+  "editToDuplicate": [
+    {
+      "testCaseId": "POS-CITY-053",
+      "description": "should not allow editing to a duplicate city  name",
+      "firstName": "Vigan",
+      "secondName": "Montalban",
+      "duplicateMessage": "City ({name}) already Exist"
+    }
+  ]
+}

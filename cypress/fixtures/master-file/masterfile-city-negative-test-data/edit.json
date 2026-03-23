@@ -1,0 +1,8 @@
+[
+  {
+    "testCaseId": "POS-CITY-019",
+    "description": "should edit a Legally Separated civil status",
+    "originalName": "Bacoor",
+    "updatedName": "Bacoor City"
+  }
+]

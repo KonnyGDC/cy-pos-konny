@@ -1,0 +1,7 @@
+[
+  {
+    "testCaseId": "POS-CITY-029",
+    "description": "should delete a ABC123 city ",
+    "name": "ABC123"
+  }
+]

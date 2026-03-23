@@ -1,0 +1,8 @@
+[
+  {
+    "testCaseId": "POS-CITY-051",
+    "description": "should not allow duplicate city name",
+    "name": "Ilocos Sur",
+    "duplicateMessage": "City ({city}) already Exist"
+  }
+]
